@@ -13,8 +13,23 @@ docker build -t tup-api .
 ```
 
 Next, deploy to GCP with:
+In the deployment we need to use google cloud SDK to push our API Docker image to GCR, and for that you need to give just this command 
 
-We have to first authenticate than we can deploy,
+```
+# Add the Cloud SDK distribution URI as a package source
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+
+# Import the Google Cloud Platform public key
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+
+# Update the package list
+sudo apt-get update
+
+# Install the Google Cloud SDK
+sudo apt-get install google-cloud-sdk
+```
+
+Now we have to first authenticate than we can deploy,
 for authenticate we will give this 2 commands
 
 ```
