@@ -18,13 +18,13 @@ We have to first authenticate than we can deploy,
 for authenticate we will give this 2 commands
 
 ```
-$ gcloud auth login
+gcloud auth login
 ```
 After this command you will get the page of your google account which you have to confirm.
 After then simply this command,
 
 ``` 
-$ gcloud auth configure-docker
+gcloud auth configure-docker
 ```
 
 This is command for deploy to google cloud
