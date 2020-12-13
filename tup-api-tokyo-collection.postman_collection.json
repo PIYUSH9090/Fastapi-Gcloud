@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "0ba1e77d-720f-4b50-8fb9-cf5f2ec05876",
+		"name": "tup-api-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-rome",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://tup-api-zwsnfilpqq-uc.a.run.app/places?location=rome",
+					"protocol": "https",
+					"host": [
+						"tup-api-zwsnfilpqq-uc",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"places"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "rome"
+						}
+					]
+				},
+				"description": "This is for getting rome"
+			},
+			"response": []
+		},
+		{
+			"name": "DEL-tokyo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://tup-api-zwsnfilpqq-uc.a.run.app/places?location=tokyo",
+					"protocol": "https",
+					"host": [
+						"tup-api-zwsnfilpqq-uc",
+						"a",
+						"run",
+						"app"
+					],
+					"path": [
+						"places"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "tokyo"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
